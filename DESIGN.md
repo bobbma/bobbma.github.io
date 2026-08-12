@@ -12,7 +12,7 @@
 - Avoid: Marketing-style claims, decorative gradients, generic AI imagery, crowded publication cards
 
 ## Product goals
-- Goals: Establish Yuexiao Ma's research identity; make publications, experience, CV, and contact details easy to scan; support Chinese and English readers
+- Goals: Establish Yuexiao Ma's research identity; make publications, experience, CV, and contact details easy to scan for an international audience
 - Non-goals: Blog platform, publication CMS, live citation counter, exhaustive project archive
 - Success signals: Visitors understand the research focus in one viewport and reach a paper, CV, Scholar profile, or email in one action
 
@@ -43,7 +43,7 @@
 ## Components
 - Existing components to reuse: None; new repository
 - New/changed components: Sticky navigation, identity hero, research focus list, publication rows, experience timeline, language switch, theme switch
-- Variants and states: Light/dark theme, Chinese/English content, mobile navigation
+- Variants and states: Light/dark theme and mobile navigation
 - Token/component ownership: CSS custom properties in `styles.css`
 
 ## Accessibility
@@ -82,4 +82,3 @@
 - [ ] Confirm current postdoctoral start date and whether it should replace the Ph.D. entry as the primary role
 - [ ] Confirm whether all 2026 publication statuses are final and public
 - [ ] Add citation counts only if a stable, user-controlled data source becomes available
-

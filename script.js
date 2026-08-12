@@ -1,6 +1,4 @@
 const root = document.documentElement;
-const languageButtons = document.querySelectorAll("[data-language]");
-const translatedElements = document.querySelectorAll("[data-en][data-zh]");
 const themeToggle = document.querySelector("#theme-toggle");
 const menuToggle = document.querySelector("#menu-toggle");
 const mobileNav = document.querySelector("#mobile-nav");
@@ -10,23 +8,6 @@ function refreshIcons() {
   if (window.lucide) {
     window.lucide.createIcons();
   }
-}
-
-function setLanguage(language) {
-  const normalizedLanguage = language === "zh" ? "zh" : "en";
-  root.lang = normalizedLanguage === "zh" ? "zh-CN" : "en";
-
-  translatedElements.forEach((element) => {
-    element.textContent = element.dataset[normalizedLanguage];
-  });
-
-  languageButtons.forEach((button) => {
-    const isActive = button.dataset.language === normalizedLanguage;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
-
-  localStorage.setItem("language", normalizedLanguage);
 }
 
 function setTheme(theme) {
@@ -46,10 +27,6 @@ function setMenu(open) {
   menuToggle.innerHTML = `<i data-lucide="${open ? "x" : "menu"}" aria-hidden="true"></i>`;
   refreshIcons();
 }
-
-languageButtons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.language));
-});
 
 themeToggle.addEventListener("click", () => {
   setTheme(root.dataset.theme === "dark" ? "light" : "dark");
@@ -91,10 +68,6 @@ sections.forEach((section) => sectionObserver.observe(section));
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 const preferredTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-const preferredLanguage = localStorage.getItem("language") || (navigator.language.startsWith("zh") ? "zh" : "en");
-
 setTheme(preferredTheme);
-setLanguage(preferredLanguage);
 setMenu(false);
 window.addEventListener("load", refreshIcons);
-

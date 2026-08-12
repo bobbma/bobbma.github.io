@@ -159,30 +159,6 @@ img {
   gap: 8px;
 }
 
-.language-switch {
-  display: flex;
-  align-items: center;
-  height: 36px;
-  border: 1px solid var(--line);
-}
-
-.language-button {
-  width: 34px;
-  height: 34px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.language-button.is-active {
-  background: var(--ink);
-  color: var(--paper);
-}
-
 .icon-button {
   display: grid;
   width: 38px;
@@ -240,16 +216,6 @@ img {
   font-size: clamp(58px, 7.1vw, 104px);
   font-weight: 500;
   line-height: 0.93;
-}
-
-.hero h1 span {
-  display: block;
-  margin-top: 18px;
-  color: var(--faint);
-  font-family: var(--sans);
-  font-size: 0.3em;
-  font-weight: 500;
-  letter-spacing: 0.12em;
 }
 
 .hero-role {
@@ -344,9 +310,10 @@ img {
 
 .portrait-frame img {
   width: 100%;
-  aspect-ratio: 0.688;
-  object-fit: cover;
-  filter: saturate(0.78) contrast(1.04);
+  height: auto;
+  aspect-ratio: 1279 / 1712;
+  object-fit: contain;
+  filter: saturate(0.88) contrast(1.02);
 }
 
 .portrait-wrap figcaption {
@@ -837,19 +804,6 @@ footer a:hover {
   color: var(--accent);
 }
 
-[lang="zh-CN"] body,
-[lang="zh-CN"] .hero-intro,
-[lang="zh-CN"] .about-copy .lead,
-[lang="zh-CN"] .section-heading h2,
-[lang="zh-CN"] .contact-section h2,
-[lang="zh-CN"] .publication-main h3,
-[lang="zh-CN"] .timeline-content h3,
-[lang="zh-CN"] .service-grid h3,
-[lang="zh-CN"] .at-a-glance dd,
-[lang="zh-CN"] .research-item h3 {
-  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", var(--display);
-}
-
 @media (max-width: 960px) {
   :root {
     --page: min(100% - 40px, 760px);
@@ -1118,4 +1072,3 @@ footer a:hover {
     transition-duration: 0.01ms !important;
   }
 }
-

@@ -1,6 +1,6 @@
 # bobbma.github.io
 
-Personal academic website for Yuexiao Ma (马跃萧), designed for direct deployment at <https://bobbma.github.io>.
+Personal academic website for Yuexiao Ma, designed for direct deployment at <https://bobbma.github.io>.
 
 ## Local preview
 
@@ -17,4 +17,3 @@ Push the contents of the repository's default branch to the GitHub repository na
 ## Credits
 
 The information architecture was informed by [Academic Pages](https://academicpages.github.io/) and [al-folio](https://github.com/alshedivat/al-folio). The visual system and implementation in this repository are original.
-
