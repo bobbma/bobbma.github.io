@@ -1,17 +1,17 @@
 {
-  "score": 95,
+  "score": 96,
   "threshold": 90,
   "passed": true,
   "verdict": "pass",
   "category_match": true,
   "differences": [
-    "Very wide source figures require proportional side cropping to fill the fixed 16:10 thumbnail frame.",
-    "Full author lists necessarily create dense metadata on narrow mobile screens."
+    "The bilingual name intentionally wraps onto two lines at the 390px mobile breakpoint.",
+    "The title remains the dominant first-viewport element while leaving more space around the portrait."
   ],
   "suggestions": [
-    "Keep the current center crops unless a narrower official overview figure becomes available.",
-    "Preserve the current compact publication rhythm in future edits."
+    "Keep the current responsive title scale unless the name or portrait dimensions change.",
+    "Preserve the current compact hero spacing in future edits."
   ],
-  "reasoning": "Desktop and 390px mobile screenshots remain readable with no overlap or overflow. The requested source figures are correctly displayed, and the four formerly sparse thumbnails now fill their frames without distortion.",
+  "reasoning": "The slightly smaller bilingual title improves balance with the portrait on desktop and remains readable at 390px with no overlap, overflow, or unintended layout shift.",
   "next_actions": []
 }
