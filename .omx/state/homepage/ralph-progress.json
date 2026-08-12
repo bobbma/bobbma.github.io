@@ -1,17 +1,17 @@
 {
-  "score": 93,
+  "score": 95,
   "threshold": 90,
   "passed": true,
   "verdict": "pass",
   "category_match": true,
   "differences": [
-    "Papers without an arXiv source package still use an official abstract or first-page overview.",
-    "Full author lists necessarily create denser metadata on narrow mobile screens."
+    "Very wide source figures require proportional side cropping to fill the fixed 16:10 thumbnail frame.",
+    "Full author lists necessarily create dense metadata on narrow mobile screens."
   ],
   "suggestions": [
-    "Replace remaining first-page thumbnails only when an official source figure becomes publicly available.",
-    "Preserve the current compact hero and publication rhythm in future edits."
+    "Keep the current center crops unless a narrower official overview figure becomes available.",
+    "Preserve the current compact publication rhythm in future edits."
   ],
-  "reasoning": "The compact research profile remains readable across desktop and mobile, while original arXiv framework figures and verified code links materially improve publication provenance and scanability.",
+  "reasoning": "Desktop and 390px mobile screenshots remain readable with no overlap or overflow. The requested source figures are correctly displayed, and the four formerly sparse thumbnails now fill their frames without distortion.",
   "next_actions": []
 }
