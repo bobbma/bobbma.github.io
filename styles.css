@@ -314,24 +314,6 @@ img {
   filter: saturate(0.88) contrast(1.02);
 }
 
-.portrait-wrap figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 9px;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #2b9b6d;
-  box-shadow: 0 0 0 4px rgba(43, 155, 109, 0.13);
-}
-
 .hero-index { display: none; }
 
 .hero-index-line {
@@ -957,10 +939,6 @@ footer a:hover {
   .portrait-frame {
     width: 112px;
     margin-left: auto;
-  }
-
-  .portrait-wrap figcaption {
-    justify-content: flex-start;
   }
 
   .hero-intro {

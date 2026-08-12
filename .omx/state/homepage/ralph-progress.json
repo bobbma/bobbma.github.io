@@ -5,13 +5,13 @@
   "verdict": "pass",
   "category_match": true,
   "differences": [
-    "The bilingual name intentionally wraps onto two lines at the 390px mobile breakpoint.",
-    "The title remains the dominant first-viewport element while leaving more space around the portrait."
+    "The collaboration invitation adds two short lines to the mobile introduction.",
+    "Removing the portrait caption leaves the image edge visually cleaner on both breakpoints."
   ],
   "suggestions": [
-    "Keep the current responsive title scale unless the name or portrait dimensions change.",
+    "Keep collaboration messaging in the introduction instead of adding a separate portrait status.",
     "Preserve the current compact hero spacing in future edits."
   ],
-  "reasoning": "The slightly smaller bilingual title improves balance with the portrait on desktop and remains readable at 390px with no overlap, overflow, or unintended layout shift.",
+  "reasoning": "The collaboration invitation reads naturally within the research introduction, while removing the separate portrait caption simplifies the hero. Desktop and 390px screenshots show no overlap or overflow.",
   "next_actions": []
 }
