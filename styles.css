@@ -405,6 +405,16 @@ img {
   line-height: 1.4;
 }
 
+.about-copy .lead a {
+  text-decoration-color: var(--line-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.about-copy .lead a:hover {
+  color: var(--accent);
+}
+
 .about-copy > p:not(.lead) {
   max-width: 740px;
   margin: 18px 0 0;
@@ -767,6 +777,15 @@ img {
   color: var(--muted);
 }
 
+.reviewer-links a {
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+}
+
+.reviewer-links a:hover {
+  color: var(--accent);
+}
+
 .contact-section {
   width: var(--page);
   margin: 0 auto;
@@ -802,7 +821,7 @@ img {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 24px;
   width: var(--page);
   margin: 0 auto;
@@ -814,10 +833,6 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-footer p:nth-child(2) {
-  text-align: center;
 }
 
 footer .credit {

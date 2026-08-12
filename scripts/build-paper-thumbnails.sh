@@ -28,3 +28,24 @@ render_thumb "mllm-orchestration.pdf" "mllm-orchestration.webp"
 render_thumb "a2rbench.pdf" "a2rbench.webp"
 render_thumb "2510.26527.pdf" "polybasic.webp"
 render_thumb "moe-quant.pdf" "moe-quant.webp"
+
+# Prefer original overview/framework artwork from arXiv source packages when available.
+# Source packages remain ignored; only optimized WebP thumbnails ship to Pages.
+render_source_figure() {
+  local source="$1"
+  local output="$2"
+  local temp
+  temp="$(mktemp -d)"
+  pdftoppm -singlefile -r 100 -jpeg "$source" "$temp/page" >/dev/null 2>&1
+  convert "$temp/page.jpg" -resize '600x375^' -gravity center -extent 600x375 -strip -quality 80 "$thumb_dir/$output"
+}
+
+render_source_figure "assets/papers/arxiv-source/2108.08532/frameworkV3.pdf" "itpruner.webp"
+render_source_figure "assets/papers/arxiv-source/2109.07865/overview.pdf" "ompq.webp"
+render_source_figure "assets/papers/arxiv-source/2303.11906/overview.pdf" "oscillation.webp"
+render_source_figure "assets/papers/arxiv-source/2403.12544/transformation.pdf" "affinequant.webp"
+render_source_figure "assets/papers/arxiv-source/2508.10016/content/figures/fig_pipline.pdf" "mllm-orchestration.webp"
+render_source_figure "assets/papers/arxiv-source/2510.26527/imgs/framework.pdf" "polybasic.webp"
+render_source_figure "assets/papers/arxiv-source/2602.10825/method.pdf" "flow-cache.webp"
+render_source_figure "assets/papers/arxiv-source/2605.01725/figs/method_cropped.pdf" "motion-cache.webp"
+render_source_figure "assets/papers/arxiv-source/2605.17278/pic/pipeline0128.pdf" "a2rbench.webp"

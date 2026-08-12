@@ -3,3 +3,4 @@ node_modules/
 test-results/
 playwright-report/
 assets/papers/source/
+assets/papers/arxiv-source/

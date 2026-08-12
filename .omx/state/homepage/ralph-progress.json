@@ -1,17 +1,17 @@
 {
-  "score": 92,
+  "score": 93,
   "threshold": 90,
   "passed": true,
   "verdict": "pass",
   "category_match": true,
   "differences": [
-    "Some papers without an accessible public framework figure use an official abstract or first-page overview instead.",
+    "Papers without an arXiv source package still use an official abstract or first-page overview.",
     "Full author lists necessarily create denser metadata on narrow mobile screens."
   ],
   "suggestions": [
-    "Replace first-page thumbnails only when an official project figure becomes publicly available.",
+    "Replace remaining first-page thumbnails only when an official source figure becomes publicly available.",
     "Preserve the current compact hero and publication rhythm in future edits."
   ],
-  "reasoning": "The page now clearly matches a dense academic-profile category: the compact identity header, complete publication record, framework thumbnails, and restrained typography remain readable across desktop and mobile.",
+  "reasoning": "The compact research profile remains readable across desktop and mobile, while original arXiv framework figures and verified code links materially improve publication provenance and scanability.",
   "next_actions": []
 }

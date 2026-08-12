@@ -38,7 +38,7 @@
 - Spacing/layout rhythm: 6px base rhythm with compact 64-80px sections and 18-24px publication rows
 - Shape/radius/elevation: 2-6px radii; thin rules; minimal elevation
 - Motion: Small entrance and hover transitions; fully disabled under reduced motion
-- Imagery/iconography: One compact authentic portrait, paper-owned overview/first-page thumbnails, Lucide icons loaded from a pinned CDN
+- Imagery/iconography: One compact authentic portrait, original overview/framework figures extracted from arXiv source when available, official publication views otherwise, Lucide icons loaded from a pinned CDN
 
 ## Components
 - Existing components to reuse: None; new repository
@@ -79,7 +79,7 @@
 - Test/screenshot expectations: HTML validation, verified paper/code links, responsive browser screenshots at desktop and mobile widths, visual-verdict score of 90+
 
 ## Open questions
-- [ ] Confirm current postdoctoral start date and whether it should replace the Ph.D. entry as the primary role
+- [ ] Confirm the Research Fellow start date for the experience timeline
 - [ ] Confirm whether all 2026 publication statuses are final and public
 - [ ] Add citation counts only if a stable, user-controlled data source becomes available
-- [ ] Replace abstract/first-page thumbnails when official method figures or project pages become available
+- [ ] Replace the remaining non-arXiv first-page thumbnails when official method figures become available
