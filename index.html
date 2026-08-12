@@ -159,68 +159,70 @@
       <section class="section publications-section" id="publications">
         <div class="section-label">
           <span>03</span>
-          <p>Selected publications</p>
+          <p>Publications</p>
         </div>
         <div class="section-heading publications-heading">
-          <h2>Research highlights</h2>
-          <a class="text-link" href="https://scholar.google.com/citations?user=DVszibYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
-            <span>View all on Scholar</span>
-            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-          </a>
+          <div>
+            <h2>Publications</h2>
+            <p class="publication-key"><sup>*</sup> Equal contribution · <sup>†</sup> Corresponding author</p>
+          </div>
+          <a class="text-link" href="https://scholar.google.com/citations?user=DVszibYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><span>Google Scholar</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
         </div>
 
         <div class="publication-list">
           <article class="publication-item featured">
-            <div class="publication-meta"><span>ICLR 2026</span><span>Video generation</span></div>
-            <div class="publication-main">
-              <h3><a href="https://openreview.net/pdf?id=vko4DuhKbh" target="_blank" rel="noreferrer">Flow Caching for Autoregressive Video Generation</a></h3>
-              <p><strong>Yuexiao Ma*</strong>, Xuzhe Zheng*, Jing Xu*, Xiwei Xu, Feng Ling, et al.</p>
-              <p class="publication-note">Flow-aware reuse for faster autoregressive video synthesis.</p>
-            </div>
-            <a class="publication-action" href="https://openreview.net/pdf?id=vko4DuhKbh" target="_blank" rel="noreferrer" aria-label="Open Flow Caching paper"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2602.10825" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/flow-cache.webp" alt="Overview of Flow Caching"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICLR 2026</span><span>Video generation</span></div><h3>Flow Caching for Autoregressive Video Generation</h3><p class="publication-authors"><strong>Yuexiao Ma<sup>*</sup></strong>, Xuzhe Zheng<sup>*</sup>, Jing Xu<sup>*</sup>, Xiwei Xu, Feng Ling, Xiawu Zheng, Huafeng Kuang, Huixia Li, Xing Wang, Xuefeng Xiao, Fei Chao, Rongrong Ji<sup>†</sup></p><p class="publication-note">Flow-aware feature reuse accelerates autoregressive video generation while preserving temporal quality.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2602.10825" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a></div></div>
           </article>
-
           <article class="publication-item">
-            <div class="publication-meta"><span>ICML 2024</span><span>Vision quantization</span></div>
-            <div class="publication-main">
-              <h3><a href="https://openreview.net/pdf?id=Uh5XN9d2J4" target="_blank" rel="noreferrer">Outlier-aware Slicing for Post-Training Quantization in Vision Transformer</a></h3>
-              <p><strong>Yuexiao Ma</strong>, Huixia Li, Xiawu Zheng, Feng Ling, et al.</p>
-              <p class="publication-note">Outlier-aware channel slicing for accurate INT4 vision transformers.</p>
-            </div>
-            <a class="publication-action" href="https://openreview.net/pdf?id=Uh5XN9d2J4" target="_blank" rel="noreferrer" aria-label="Open Outlier-aware Slicing paper"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2605.01725" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/motion-cache.webp" alt="Overview of MotionCache"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICML 2026</span><span>Video generation</span></div><h3>Motion-Aware Caching for Efficient Autoregressive Video Generation</h3><p class="publication-authors">Jing Xu<sup>*</sup>, <strong>Yuexiao Ma<sup>*</sup></strong>, Xuzhe Zheng, Xing Wang, Shiwei Liu, Chenqian Yan, Xiawu Zheng, Rongrong Ji, Fei Chao, Songwei Liu<sup>†</sup></p><p class="publication-note">A coarse-to-fine cache policy uses inter-frame motion to allocate computation where it matters.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2605.01725" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a></div></div>
           </article>
-
           <article class="publication-item">
-            <div class="publication-meta"><span>ICLR 2024</span><span>LLM quantization</span></div>
-            <div class="publication-main">
-              <h3><a href="https://openreview.net/forum?id=of2rhALq8l" target="_blank" rel="noreferrer">AffineQuant: Affine Transformation Quantization for Large Language Models</a></h3>
-              <p><strong>Yuexiao Ma</strong>, Huixia Li, Xiawu Zheng, Feng Ling, et al.</p>
-              <p class="publication-note">Learned affine transformations that suppress activation outliers and quantization error.</p>
-            </div>
-            <a class="publication-action" href="https://openreview.net/forum?id=of2rhALq8l" target="_blank" rel="noreferrer" aria-label="Open AffineQuant paper"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2508.10016" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/mllm-orchestration.webp" alt="Overview of training-free multimodal orchestration"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICML 2026</span><span>Multimodal LLMs</span></div><h3>Training-Free Multimodal Large Language Model Orchestration</h3><p class="publication-authors">Tianyu Xie, <strong>Yuexiao Ma</strong>, Yuhang Wu, Wang Chen, Jiayi Ji, Tat-Seng Chua, Xiawu Zheng<sup>†</sup>, Rongrong Ji</p><p class="publication-note">A controller composes specialized modality experts into a unified training-free multimodal system.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2508.10016" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a></div></div>
           </article>
-
           <article class="publication-item">
-            <div class="publication-meta"><span>CVPR 2023</span><span>Quantization theory</span></div>
-            <div class="publication-main">
-              <h3><a href="https://arxiv.org/pdf/2303.11906" target="_blank" rel="noreferrer">Solving Oscillation Problem in Post-Training Quantization Through a Theoretical Perspective</a></h3>
-              <p><strong>Yuexiao Ma</strong>, Huixia Li, Xiawu Zheng, Xuefeng Xiao, et al.</p>
-              <p class="publication-note">A theoretical account and practical solution for optimization oscillation in PTQ.</p>
-            </div>
-            <a class="publication-action" href="https://arxiv.org/pdf/2303.11906" target="_blank" rel="noreferrer" aria-label="Open oscillation paper"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2605.17278" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/a2rbench.webp" alt="A2RBench generation pipeline overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICML 2026</span><span>Reasoning benchmark</span></div><h3>A<sup>2</sup>RBench: An Automatic Paradigm for Formally Verifiable Abstract Reasoning Benchmark Generation</h3><p class="publication-authors">Qingchuan Ma, <strong>Yuexiao Ma</strong>, Yongkang Xie, Tianyu Xie, Xiawu Zheng<sup>†</sup>, Rongrong Ji</p><p class="publication-note">An automated pipeline generates abstract reasoning tasks with programmatic verification.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2605.17278" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a><a href="https://github.com/MAC-AutoML/A2Rbench" target="_blank" rel="noreferrer"><i data-lucide="github"></i>Code</a></div></div>
           </article>
-
           <article class="publication-item">
-            <div class="publication-meta"><span>AAAI 2023</span><span>Mixed precision</span></div>
-            <div class="publication-main">
-              <h3><a href="https://arxiv.org/pdf/2109.07865" target="_blank" rel="noreferrer">OMPQ: Orthogonal Mixed Precision Quantization</a></h3>
-              <p><strong>Yuexiao Ma</strong>, Taisong Jin, Xiawu Zheng, Yan Wang, et al.</p>
-              <p class="publication-note">Orthogonality-guided bit allocation for mixed-precision neural networks.</p>
-            </div>
-            <a class="publication-action" href="https://arxiv.org/pdf/2109.07865" target="_blank" rel="noreferrer" aria-label="Open OMPQ paper"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2510.26527" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/polybasic.webp" alt="Overview of polybasic speculative decoding"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICML 2025</span><span>Speculative decoding</span></div><h3>Polybasic Speculative Decoding Through a Theoretical Perspective</h3><p class="publication-authors">Ruilin Wang, Huixia Li, <strong>Yuexiao Ma</strong>, Xiawu Zheng, Fei Chao, Xuefeng Xiao, Rongrong Ji<sup>†</sup></p><p class="publication-note">A theoretical framework generalizes draft-and-verify decoding to multiple interconnected draft models.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2510.26527" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://aclanthology.org/2025.findings-acl.1386.pdf" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/moe-quant.webp" alt="Overview of fine-grained mixture-of-experts quantization"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ACL Findings 2025</span><span>MoE quantization</span></div><h3>Automated Fine-Grained Mixture-of-Experts Quantization</h3><p class="publication-authors">Zhanhao Xie, <strong>Yuexiao Ma</strong>, Xiawu Zheng, Fei Chao, Wanchen Sui, Shen Li, Yong Li, Rongrong Ji<sup>†</sup></p><p class="publication-note">Automated channel-wise bit allocation compresses sparse MoE models under extreme low-bit settings.</p><div class="publication-links"><a href="https://aclanthology.org/2025.findings-acl.1386.pdf" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a><a href="https://github.com/cei1ing4/Fine-Grained-MoE-Quantization" target="_blank" rel="noreferrer"><i data-lucide="github"></i>Code</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://vimeo.com/1095991270" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/dynamic-ptq.webp" alt="Video overview for dynamic post-training quantization"></a>
+            <div class="publication-main"><div class="publication-meta"><span>IJCNN 2025</span><span>Diffusion quantization</span></div><h3>Dynamic Post-Training Quantization for Diffusion Models</h3><p class="publication-authors">Xiao Yang, Huixia Li, Lijiang Li, Xiawu Zheng, <strong>Yuexiao Ma</strong>, Feng Ling, Jie Wu, Xuefeng Xiao, Rui Wang, Shilei Wen, Fei Chao<sup>†</sup></p><p class="publication-note">Dynamic quantization adapts precision to the changing activation distributions across diffusion timesteps.</p><div class="publication-links"><a href="https://vimeo.com/1095991270" target="_blank" rel="noreferrer"><i data-lucide="play"></i>Video</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2108.08532" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/itpruner.webp" alt="ITPruner framework overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>IJCV 2025</span><span>Network pruning</span></div><h3>An Information Theory-inspired Strategy for Automatic Network Pruning</h3><p class="publication-authors">Xiawu Zheng<sup>*</sup>, <strong>Yuexiao Ma<sup>*</sup></strong>, Teng Xi, Gang Zhang, Errui Ding, Yuchao Li, Jie Chen, Yonghong Tian, Rongrong Ji<sup>†</sup></p><p class="publication-note">Information-theoretic layer importance enables one-pass, search-free automatic pruning.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2108.08532" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a><a href="https://github.com/MAC-AutoML/ITPruner" target="_blank" rel="noreferrer"><i data-lucide="github"></i>Code</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://proceedings.mlr.press/v235/ma24f.html" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/outlier-slicing.webp" alt="Outlier-aware Slicing paper overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICML 2024</span><span>Vision quantization</span></div><h3>Outlier-aware Slicing for Post-Training Quantization in Vision Transformer</h3><p class="publication-authors"><strong>Yuexiao Ma</strong>, Huixia Li, Xiawu Zheng, Feng Ling, Xuefeng Xiao, Rui Wang, Shilei Wen, Fei Chao, Rongrong Ji<sup>†</sup></p><p class="publication-note">Outlier-aware channel slicing substantially improves accurate INT4 deployment of vision transformers.</p><div class="publication-links"><a href="https://proceedings.mlr.press/v235/ma24f.html" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2403.12544" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/affinequant.webp" alt="AffineQuant transformation overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>ICLR 2024</span><span>LLM quantization</span></div><h3>AffineQuant: Affine Transformation Quantization for Large Language Models</h3><p class="publication-authors"><strong>Yuexiao Ma</strong>, Huixia Li, Xiawu Zheng, Feng Ling, Xuefeng Xiao, Rui Wang, Shilei Wen, Fei Chao, Rongrong Ji<sup>†</sup></p><p class="publication-note">Learned affine transformations reduce activation outliers and post-training quantization error.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2403.12544" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a><a href="https://github.com/bytedance/AffineQuant" target="_blank" rel="noreferrer"><i data-lucide="github"></i>Code</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2303.11906" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/oscillation.webp" alt="MRECG method overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>CVPR 2023</span><span>Quantization theory</span></div><h3>Solving Oscillation Problem in Post-Training Quantization Through a Theoretical Perspective</h3><p class="publication-authors"><strong>Yuexiao Ma</strong>, Huixia Li, Xiawu Zheng, Xuefeng Xiao, Rui Wang, Shilei Wen, Xin Pan, Fei Chao, Rongrong Ji<sup>†</sup></p><p class="publication-note">A theoretical diagnosis of PTQ oscillation leads to mixed reconstruction granularity optimization.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2303.11906" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a><a href="https://github.com/bytedance/MRECG" target="_blank" rel="noreferrer"><i data-lucide="github"></i>Code</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://arxiv.org/pdf/2109.07865" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/ompq.webp" alt="OMPQ framework overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>AAAI 2023</span><span>Mixed precision</span></div><h3>OMPQ: Orthogonal Mixed Precision Quantization</h3><p class="publication-authors"><strong>Yuexiao Ma</strong>, Taisong Jin<sup>†</sup>, Xiawu Zheng, Yan Wang, Huixia Li, Yongjian Wu, Yunsheng Wu, Guannan Jiang, Wei Zhang, Rongrong Ji</p><p class="publication-note">Orthogonality-guided sensitivity estimates allocate mixed precision without iterative search.</p><div class="publication-links"><a href="https://arxiv.org/pdf/2109.07865" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a><a href="https://github.com/MAC-AutoML/OMPQ" target="_blank" rel="noreferrer"><i data-lucide="github"></i>Code</a></div></div>
+          </article>
+          <article class="publication-item">
+            <a class="publication-thumb" href="https://boundaryvalueproblems.springeropen.com/articles/10.1186/s13661-019-1155-7" target="_blank" rel="noreferrer"><img src="assets/papers/thumbs/boundary-value.webp" alt="Boundary value problem paper overview"></a>
+            <div class="publication-main"><div class="publication-meta"><span>BVP 2019</span><span>Applied mathematics</span></div><h3>Positive Solutions of Fourth-order Problems with Dependence on All Derivatives in Nonlinearity under Stieltjes Integral Boundary Conditions</h3><p class="publication-authors"><strong>Yuexiao Ma</strong>, Chenyang Yin, Guowei Zhang<sup>†</sup></p><p class="publication-note">Existence results for positive solutions of fourth-order boundary value problems under Stieltjes conditions.</p><div class="publication-links"><a href="https://boundaryvalueproblems.springeropen.com/articles/10.1186/s13661-019-1155-7" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i>Paper</a></div></div>
           </article>
         </div>
-        <p class="publication-footnote">* Equal contribution. Full author lists and the complete publication record are available on Google Scholar.</p>
       </section>
 
       <section class="section experience-section" id="experience">

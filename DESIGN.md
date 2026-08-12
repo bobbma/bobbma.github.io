@@ -4,7 +4,7 @@
 - Status: Active
 - Last refreshed: 2026-08-12
 - Primary product surfaces: Single-page academic portfolio at `bobbma.github.io`
-- Evidence reviewed: `/home/myx/cv/resume/resume-zh_EN.tex`, public GitHub profile and repositories, supplied Google Scholar URL, `/home/myx/yuexiaoma.JPG`
+- Evidence reviewed: `/home/myx/cv/resume/resume-zh_EN.tex`, public GitHub profile and repositories, supplied Google Scholar URL, `assets/yuexiao-ma.jpg`, official paper PDFs and publication pages
 
 ## Brand
 - Personality: Precise, credible, technically ambitious, approachable
@@ -24,25 +24,25 @@
 ## Information architecture
 - Primary navigation: About, Research, Publications, Experience, Service
 - Core routes/screens: One-page site with anchored sections
-- Content hierarchy: Identity and focus, recent highlights, selected publications, timeline, professional service, contact
+- Content hierarchy: Compact identity summary, complete publication record, research focus, timeline, professional service, contact
 
 ## Design principles
 - Evidence first: Venue, contribution, and outcome carry more weight than decoration
-- Dense but breathable: Academic content remains scannable without turning into a dashboard
+- Dense and scholarly: Favor a compact CV-like reading rhythm over oversized editorial composition
 - Direct access: Primary artifacts are one click away
-- Tradeoffs: Selected publications are highlighted while the full record remains on Google Scholar
+- Tradeoffs: The complete publication record is shown; supporting descriptions stay short to keep the page scannable
 
 ## Visual language
 - Color: Ink, paper white, muted blue, cyan accent, restrained warm highlight
-- Typography: System sans for interface and Source Serif for editorial headings/body accents
-- Spacing/layout rhythm: 8px base rhythm with broad section spacing
+- Typography: System sans for dense metadata and Source Serif for restrained headings; no display type above 56px
+- Spacing/layout rhythm: 6px base rhythm with compact 64-80px sections and 18-24px publication rows
 - Shape/radius/elevation: 2-6px radii; thin rules; minimal elevation
 - Motion: Small entrance and hover transitions; fully disabled under reduced motion
-- Imagery/iconography: One authentic portrait; Lucide icons loaded from a pinned CDN
+- Imagery/iconography: One compact authentic portrait, paper-owned overview/first-page thumbnails, Lucide icons loaded from a pinned CDN
 
 ## Components
 - Existing components to reuse: None; new repository
-- New/changed components: Sticky navigation, identity hero, research focus list, publication rows, experience timeline, language switch, theme switch
+- New/changed components: Sticky navigation, compact identity header, dense publication entries with thumbnails and resource links, research focus list, experience timeline, theme switch
 - Variants and states: Light/dark theme and mobile navigation
 - Token/component ownership: CSS custom properties in `styles.css`
 
@@ -55,7 +55,7 @@
 
 ## Responsive behavior
 - Supported breakpoints/devices: Modern mobile and desktop browsers, 360px and wider
-- Layout adaptations: Hero and timeline collapse to one column; navigation becomes a compact menu
+- Layout adaptations: Identity header and timeline collapse to one column; publication thumbnails remain visible at reduced size; navigation becomes a compact menu
 - Touch/hover differences: Minimum 44px controls; hover styling is non-essential
 
 ## Interaction states
@@ -74,11 +74,12 @@
 ## Implementation constraints
 - Framework/styling system: Dependency-free HTML, CSS, and JavaScript for GitHub Pages
 - Design-token constraints: All repeated colors, typography, and layout values use CSS custom properties
-- Performance constraints: No framework bundle; optimized local portrait; fonts are optional enhancements
+- Performance constraints: No framework bundle; optimized local portrait and compressed local paper thumbnails; fonts are optional enhancements
 - Compatibility constraints: GitHub Pages user-site root deployment
-- Test/screenshot expectations: HTML validation, link checks, responsive browser screenshots at desktop and mobile widths
+- Test/screenshot expectations: HTML validation, verified paper/code links, responsive browser screenshots at desktop and mobile widths, visual-verdict score of 90+
 
 ## Open questions
 - [ ] Confirm current postdoctoral start date and whether it should replace the Ph.D. entry as the primary role
 - [ ] Confirm whether all 2026 publication statuses are final and public
 - [ ] Add citation counts only if a stable, user-controlled data source becomes available
+- [ ] Replace abstract/first-page thumbnails when official method figures or project pages become available
