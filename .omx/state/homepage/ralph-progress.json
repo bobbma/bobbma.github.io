@@ -1,17 +1,17 @@
 {
-  "score": 97,
+  "score": 98,
   "threshold": 90,
   "passed": true,
   "verdict": "pass",
   "category_match": true,
   "differences": [
-    "Display typography is one restrained step smaller across the hero, section headings, About lead, and contact area.",
-    "Body copy, publication metadata, and interactive controls retain their previous readable sizes."
+    "The bilingual hero name, closing statement, and email address are reduced independently from the rest of the page.",
+    "The Chinese name is kept as an indivisible phrase to prevent an awkward mobile line break."
   ],
   "suggestions": [
-    "Preserve the current heading hierarchy rather than applying a global font-size reduction.",
-    "Recheck the 390px hero if the bilingual name or portrait dimensions change."
+    "Keep the Chinese name wrapped in its non-breaking language span.",
+    "Preserve the current closing-statement and contact hierarchy."
   ],
-  "reasoning": "The reduced display scale creates a denser academic profile while preserving hierarchy and readability. Full desktop and 390px screenshots show no overlap, overflow, or unintended wrapping.",
+  "reasoning": "The three requested text elements now read at a restrained scale without weakening hierarchy. Desktop and 390px screenshots show clean bilingual wrapping, no overlap, and a balanced closing section.",
   "next_actions": []
 }
