@@ -5,13 +5,13 @@
   "verdict": "pass",
   "category_match": true,
   "differences": [
-    "All eleven publication thumbnails now use the supplied PNG artwork through pixel-identical lossless WebP encodings.",
-    "The source figures retain their native aspect ratios and are cropped only by the established thumbnail frame."
+    "Display typography is one restrained step smaller across the hero, section headings, About lead, and contact area.",
+    "Body copy, publication metadata, and interactive controls retain their previous readable sizes."
   ],
   "suggestions": [
-    "Keep the PNG files as editable source assets and serve the smaller WebP versions on the page.",
-    "Re-run the lossless conversion whenever a source PNG changes."
+    "Preserve the current heading hierarchy rather than applying a global font-size reduction.",
+    "Recheck the 390px hero if the bilingual name or portrait dimensions change."
   ],
-  "reasoning": "All eleven PNG/WebP pairs have identical dimensions and zero differing pixels. The full desktop screenshot confirms every publication thumbnail loads and fits the existing layout correctly.",
+  "reasoning": "The reduced display scale creates a denser academic profile while preserving hierarchy and readability. Full desktop and 390px screenshots show no overlap, overflow, or unintended wrapping.",
   "next_actions": []
 }
