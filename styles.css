@@ -297,15 +297,6 @@ img {
   background: var(--accent-soft);
 }
 
-.portrait-frame::before {
-  position: absolute;
-  inset: 8px;
-  z-index: 1;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  content: "";
-  pointer-events: none;
-}
-
 .portrait-frame img {
   width: 100%;
   height: auto;
